@@ -19,6 +19,8 @@ Test on local:8078
 Clone this git, then follow to build and config:
 https://hyperledger.github.io/composer/latest/installing/development-tools.html
 
+Instal mongodb, with admin authen via run.sh
+Run run.sh, remove SSL if needed
 Test on local:3000
 
 ### View device sensor
