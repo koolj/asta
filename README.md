@@ -1,5 +1,5 @@
 This is ASTA - a blockchain based AI, bigData for Stopping Traffic Accidents solution.
-A risk alerting system on Vietnam transportation.
+A risk alerting system on Vietnam transportation & traffic.
 
 Video demo: <updating>
 
@@ -51,7 +51,7 @@ Case:
 - There are numbers of traffic accidents in Vietnam reasoned by cars/bikes over-speed,  driving illegally zigzagging, drivers using alcohol, stimulants, failing brake
 - Cars and transportations always in over-loaded
 - Bikes and cars over-speed, and drive illegally zigzagging
-- Bikes, cars, and transportations used to failed to brake while in high speed
+- Bikes, cars, and transportations used to fail to brake while in high speed
 
 
 Solution:
@@ -60,7 +60,7 @@ Solution:
 - Alert to administrative agent about identities by detecting who are over over-loaded, over-speed, and drive illegally zigzagging
 
 Better than other sulutions:
-- Less and there is not much IT for traffic accident predicting or alerting
+- Less and there is not much IT solution for traffic accident predicting or alerting in Vietnam
 
 
 Any comments are appreciated.
