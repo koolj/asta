@@ -1,7 +1,7 @@
 This is ASTA - a blockchain based AI, bigData for Stopping Traffic Accidents solution.
 A risk alerting system on Vietnam transportation & traffic.
 
-Video demo: <updating>
+Video demo: https://drive.google.com/drive/folders/1gpI8glnzBNZAgqhzPYSdyvnCIyM1OtFY
 
 ## PreInstall
 You should have account on IBM's VPC, Compute, Function, Database, Hypeledger Fabric blockchain, PowerAI, IBM Analytics Engine, Db2, Watson to read write.
