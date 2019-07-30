@@ -1,0 +1,394 @@
+<!--
+//(c) Copyright 2019 by TesterPRO. All rights reserved.
+//Created by KoolJ/Pham Tuan Anh.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DeepData</title>
+    <link rel="icon" href="https://www.testerpro.org/deepdata/wp-content/uploads/2018/06/cropped-dd_ico-32x32.png" sizes="32x32" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="sbincludes/style.css" />
+    <link rel="stylesheet" href="sbincludes/prettify/prettify.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="sbincludes/prettify/prettify.js"></script>
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.scrollbar.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bs.3.3.7.min.js"></script>
+    <script src="js/cv.js"></script>
+    <style>
+		#map {
+		  height: 100%;
+		}
+		/* Optional: Makes the sample page fill the window. */
+		html, body {
+		  height: 100%;
+		  margin: 0;
+		  padding: 0;
+		}
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="imgs/header.jpg" alt="logo" style="max-width: 100%" >
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Body -->
+
+    <main>
+        <section class="section-data">
+            <div class="container">
+                <div class="data-content">
+                    <!--progress bar-->
+                    <div class="modal js-loading-bar">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="progress progress-popup">
+                                        <div class="progress-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--map component-->
+                    <div id="mappart">
+                    <h5>Giao thông xung quanh bạn</h5>
+                        <!--The div element for the map -->
+                    <div id="map"  class="AcknowledgeOuterDiv" style="height: 450px">
+                    	
+                    </div>
+                    <script>
+
+						var map, infoWindow;
+						function initMap() {
+						  map = new google.maps.Map(document.getElementById('map'), {
+						    center: {lat: -34.397, lng: 150.644},
+						    zoom: 16
+						  });
+						  map.setMapTypeId('roadmap');
+						  var trafficLayer = new google.maps.TrafficLayer();
+        				  trafficLayer.setMap(map);
+						  infoWindow = new google.maps.InfoWindow;
+
+						  // Try HTML5 geolocation.
+						  if (navigator.geolocation) {
+						    navigator.geolocation.getCurrentPosition(function(position) {
+						      var pos = {
+						        lat: position.coords.latitude,
+						        lng: position.coords.longitude
+						      };
+
+						      infoWindow.setPosition(pos);
+						      infoWindow.setContent('Location found.');
+						      infoWindow.open(map);
+						      map.setCenter(pos);
+						    }, function() {
+						      handleLocationError(true, infoWindow, map.getCenter());
+						    });
+						  } else {
+						    // Browser doesn't support Geolocation
+						    handleLocationError(false, infoWindow, map.getCenter());
+						  }
+						}
+
+						function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+						  infoWindow.setPosition(pos);
+						  infoWindow.setContent(browserHasGeolocation ?
+						                        'Error: The Geolocation service failed.' :
+						                        'Error: Your browser doesn\'t support geolocation.');
+						  infoWindow.open(map);
+						}
+					</script>
+
+
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIy5G5F8uYS5y-pfyUYezSLUs5zd9a3xY&callback=initMap">
+                    </script>  
+                     </div>
+                    
+                    
+                    <!--app choosing components-->
+                    <div id="apppart">
+                        <div style="text-align:center;">
+                            <img src="imgs/b1.png" alt="app1" max-width="100%">
+                        </div>
+                        <br>
+                        <div style="text-align:center;" id="app2">
+                            <img src="imgs/b2.png"  alt="app2" max-width="100%">
+                        </div>
+                        <br>
+                        <div style="text-align:center;">
+                            <img src="imgs/b3.png" alt="app3" max-width="100%">
+                        </div>
+                    </div>
+
+                    <!---->
+
+
+
+
+
+                    <!---->
+                    <!--term components-->
+                    <div id="termpart">
+                      <p class = "textsub1">(c) Copyright 2019 by <a href="https://testerpro.org/deepdata" >TesterPRO.org/DeepData</a>. All rights reserved. Created by
+                      <a href="https://facebook.com/koolJ.InDaHouse" ><img src="imgs/me.jpg"> </img> </a>
+                      </p>
+                        <div id="title-ack" style="text-align:center;">
+                            <h2 class="font-weight-light">Chào mừng tới
+                                <br>DNET - Hệ thống điều khiển trung tâm dữ liệu chuỗi khối v0.9</h2>
+                            <h5 class="font-weight-light">(DeepData Crytodata Management System)</h5>
+                            <h7 class="font-weight-light">Một <a href="https://docs.google.com/document/d/1SCS8hW2CTsfOCp0F8OqmN8RukgySej9aRj2pw2ayZg0/edit?usp=sharing">sản phẩm</a> của <a href="https://testerpro.org/admincv">KoolJ</a> và <a href="https://docs.google.com/spreadsheets/d/1r4npGEHM-1ey1g09j2YPLgog9HledLgEudr26rsbzCw/edit?usp=sharing">các thành viên</a>.</h7>
+                        </div>
+
+                        <div id="note-ack" align="right" style="margin-right: 420px;">
+                            <font size="2" color="red"> (Cuộn xuống đọc toàn văn điều khoản sử dụng.)</font>
+                        </div>
+                        <div id="first-ack" class="AcknowledgeOuterDiv">
+
+                            <div class="AcknowledgeInnerDiv font-weight-light">
+
+                            </div>
+
+                        </div>
+                        <p>
+                        </p>
+                        <div style="text-align:center;">
+                            <span class="AcknowledgeCheckBox">
+           <input id="AcknowledgeCheckBoxC" type="checkbox" disabled="disabled">
+           <label id="AcknowledgeCheckBoxC-tit" for="AcknowledgeCheckBoxC" style="text-align:center;" > Tôi đã đọc và đồng ý các điều khoản trên.</label>
+         </span>
+                        </div>
+                        <p>
+                            <div class="buttonrowarea" style="text-align:center;">
+                                <button type="button" name="" id="btnInit" class="btn btn-primary">Bắt đầu...</button>
+                            </div>
+
+                    </div>
+                    
+                    
+                    
+                    
+                    <!--left part components-->
+                    <nav id="leftpart">
+                        <div class="wrapper scrollbar-dynamic">
+                            <div class="page-content">
+                                <div class="container" style="padding-left:0px; padding-right:0px;">
+                                
+                                
+                                    <table>
+                                        <tr>
+                                            <th style="border-bottom:0px solid #ddd;">
+                                                <div class="search-container">
+                                                    <input type="text" placeholder="Tìm kiếm sự kiện..." name="search">
+                                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                                </div>
+                                            </th>
+                                            <th style="border-bottom:0px solid #ddd;">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle" align="right" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+                                                    <div class="dropdown-menu" align="right">
+                                                        <a class="dropdown-item" href="#" id="dr1">Danh sách sự kiện</a>
+                                                        <a class="dropdown-item" href="#" id="dr2">Thống kê kết quả vote</a>
+                                                        <a class="dropdown-item" href="#" id="dr3">Thống kê diễn biến vote</a>
+                                                        <a class="dropdown-item" href="#" id="dr4">Đăng nhập, quản trị</a>
+                                                        <a class="dropdown-item" href="#" id="dr5">Các câu hỏi về voting</a>
+                                                        <a class="dropdown-item" href="#" id="dr6">Đăng xuất</a>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </table>
+
+
+                                    <ul class="pagination">
+                                        <li><a href="#" class="text-secondary small">page&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li>
+                                            <a href="#" class="text-secondary small">
+                                            &lt;&lt;</a>
+                                        </li>
+                                        <li><a href="#" class="text-secondary small">1</a></li>
+                                        <li><a href="#" class="text-secondary small">2</a></li>
+                                        <li><a href="#" class="text-secondary small">3</a></li>
+                                        <li><a class="text-secondary small">...</a></li>
+                                        <li><a href="#" class="text-secondary small">&gt;&gt;</a></li>
+                                        <li><a href="#" class="text-secondary small">&gt;|</a></li>
+                                    </ul>
+                                    <div class="content">
+                                        <div class="tinyscroll">
+                                            <div class="scrollbar-inner">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!--right part components-->
+                    <article id="rightpart">
+                        <!--
+        <div class="shapescore"></div>
+        <div class="shapescoretext">
+          <p class="shapescoretexttext">Credit Score</p>
+          <p id="totalscore" class="shapescoretextscore">79</p>
+        </div>
+
+        <div class="shapefriend"></div>
+        <div class="shapefriendtext">
+          <p class="shapefriendtexttext">Earns</p>
+          <p id="totalfriend" class="shapefriendtextscore">379</p>
+        </div>
+
+        <div class="shapedomain"></div>
+        <div class="shapedomaintext">
+          <p class="shapedomaintexttext">Spent</p>
+          <p id="totaldomain" class="shapedomaintextscore">54</p>
+        </div>
+
+        <div class="shapeinternalscore"></div>
+        <div class="shapeinternalscoretext">
+          <p class="shapeinternalscoretexttext">Internal Score</p>
+          <p id="totalinternalscore" class="shapeinternalscoretextscore">342342563</p>
+        </div>
+
+
+        <div class="shapefrequest"></div>
+        <div class="shapefrequesttext">
+          <p class="shapefrequesttexttext">Domained</p>
+          <p id="totalfrequest" class="shapefrequesttextscore">337</p>
+        </div>
+
+        <div class="shapeunclassified"></div>
+        <div class="shapeunclassifiedtext">
+          <p class="shapeunclassifiedtexttext">Unclassified</p>
+          <p id="totalunclassified" class="shapeunclassifiedtextscore">33779</p>
+        </div>
+
+        <div class="shapedm1"></div>
+        <div class="shapedm1text">
+          <p class="shapedm1texttext">Giày, quần áo</p>
+        </div>
+
+        <div class="shapedm2"></div>
+        <div class="shapedm2text">
+          <p class="shapedm2texttext">Mỹ phẩm</p>
+        </div>
+
+        <div class="shapedm3"></div>
+        <div class="shapedm3text">
+          <p class="shapedm3texttext">Gái</p>
+        </div>
+
+        <div class="shapedm4"></div>
+        <div class="shapedm4text">
+          <p class="shapedm4texttext">Đồ công nghệ</p>
+        </div>
+
+        <div class="shapedm5"></div>
+        <div class="shapedm5text">
+          <p class="shapedm5texttext">Ăn vặt</p>
+        </div>
+
+        <div class="shapedm6"></div>
+        <div class="shapedm6text">
+          <p class="shapedm6texttext">Xe</p>
+        </div>
+
+        <div class="note">
+           <textarea class="form-control" rows="5" id="comment">Ghi chú...</textarea>
+           <p></p>
+           <button type="button" class="btn btn-primary">Save</button>
+        </div>
+-->
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="blockchart1" id="chartContainer1"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="blockchart2" id="chartContainer3"></div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <!--
+        Settings
+        <p>
+        <p>
+        <div class="blocksetting">
+          <h4>Settings</h4>
+          <div class="settingbtn" style="text-align:left;">
+            <button type="button" id="load-friends" class="btn btn-primary">Load Friends</button>
+            <button type="button" class="btn btn-primary">Load Friend Requests</button>
+            <button type="button" name="" id="btnterm" class="btn btn-primary">View Terms & Conditions </button>
+            <table style="table-layout: fixed;width:120px;">
+              <tr>
+                <th style = "border-bottom:0px;">
+                  <p> Ad Remover</p>
+                </th>
+                <th style = "border-bottom:0px;">
+                  <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                    <label class="onoffswitch-label" for="myonoffswitch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </th>
+              </table>
+          </div>
+      </div>
+      </article>
+    </section>
+-->
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section class="section-speak">
+            <div class="container">
+                <div class="speak-content">
+                    <p class="textsub3">"Cùng công nghệ giảm thiểu tỷ lệ tai nạn giao thông ở Việt Nam!"</p>
+                    <p class="textsub2">- Phạm Tuấn Anh .,ceo -</p>
+
+                    <a class="footersub1">Liên hệ:  </a><a style="color: #f9c57b;">koolj</a><a>@TesterPRO.org </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="textsub1">&copy; Copyright 2019 by <a href="https://testerpro.org/">TesterPRO.org</a>. Một <a href="https://docs.google.com/document/d/1SCS8hW2CTsfOCp0F8OqmN8RukgySej9aRj2pw2ayZg0/edit?usp=sharing">sản phẩm</a> của <a href="https://testerpro.org/admincv">KoolJ</a> và <a href="https://docs.google.com/spreadsheets/d/1r4npGEHM-1ey1g09j2YPLgog9HledLgEudr26rsbzCw/edit?usp=sharing">các thành viên</a>. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="loader" class="loading">
+      <i class="fa fa-spinner"></i>
+  </div>
+    <!-- Add script -->
+    <script src="js/page.js"></script>
+</body>
+
+</html>
