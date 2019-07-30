@@ -1,0 +1,22 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "koolj",
+  "license": "TesterPRO",
+  "dependencies": {
+    "aws-sdk": "^2.466.0",
+    "body-parser": "^1.18.3",
+    "couchbase": "^2.6.4",
+    "express": "^4.16.4",
+    "express-rate-limit": "^3.3.2",
+    "helmet": "^3.15.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.7",
+    "nodemailer": "^4.6.8"
+  }
+}
