@@ -47,7 +47,7 @@ Next version for: analytic customer's need, report administrative tasks
 
 ## How it works:
 1. Device (smart phones) will collect data from location, accelerometer, gyroscope, barometer, proximity sensors, then send to BigData lake server, where data will be trained and model will be submitted back to device.
-2. When people join traffic, device will collect data and compare to model on device. If there is abnormal signal, it send to blockchain server.
+2. When people join traffic, device will collect data and compare to model on device. If there is abnormal signal, it sends to blockchain server.
 3. Blockchain server will send abnormal signals to administrative agents, to near devices if found.
 
 ----------------------------------------
