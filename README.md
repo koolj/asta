@@ -55,9 +55,9 @@ Case:
 
 
 Solution:
-- Position which transporting identity in what speed, location, position.
-- Alert/predict to alert people's smart phones (on road) while other bikes, cars, and transportations are driven poiting at/near/targetting you in high speed.
-- Alert to administrative agent about identities who are over over-loaded, over-speed, and drive illegally zigzagging
+- Positioned identities by detecting which transporting identity in what speed, location, position.
+- Alert/predict to alert people's smart phones (on road) by detecting while other bikes, cars, and transportations are driven poiting at/near/targetting you in high speed.
+- Alert to administrative agent about identities by detecting who are over over-loaded, over-speed, and drive illegally zigzagging
 
 Better than other sulutions:
 - Less and there is not much IT for traffic accident predicting or alerting
