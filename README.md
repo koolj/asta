@@ -20,9 +20,13 @@ Clone this git, then follow to build and config with namespace asta:
 https://hyperledger.github.io/composer/latest/installing/development-tools.html
 
 Instal mongodb, with admin authen via run.sh
+
 Run npm install
+
 Add custom-jwt.js to node-modules
+
 Run run.sh, remove SSL if needed
+
 Test on local:3000/explorer
 
 ### View device sensor
