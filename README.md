@@ -9,11 +9,11 @@ You should have account on IBM's VPC, Compute, Function, Database, Hypeledger Fa
 Of course you should have npm, node, react-app installed.
 
 ### Install web local:
-Clone this git, then, on folder web, install run:
+Clone this git, then, on folder web, unzip asta.zip, remove ssl, install run:
 ### `npm install`
 
 Test on local:8078
-### `npm start`
+### `node server.js`
 
 ### Install blockchain local
 Clone this git, then follow to build and config:
