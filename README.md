@@ -1,4 +1,5 @@
-This is ASTA - a blockchain based system alerting risk on Vietnam transportation accidents.
+This is ASTA - a blockchain based AI, bigData for Stopping Traffic Accidents solution.
+A risk alerting system on Vietnam transportation.
 
 Video demo: <updating>
 
@@ -7,14 +8,22 @@ You should have account on IBM's VPC, Compute, Function, Database, Hypeledger Fa
 
 Of course you should have npm, node, react-app installed.
 
-### Install local
-
+### Install web local
 Clone this git, then install run:
 ### `npm install`
 
 Test on local:8078
 ### `npm start`
 
+### Install blockchain local
+Clone this git, then follow:
+https://hyperledger.github.io/composer/latest/installing/development-tools.html
+
+Test on local:3000
+
+### View device sensor
+Test on local:
+http://local:8078/sensor/index.html
 
 ----------------------------------------
 ## Intro
