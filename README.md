@@ -77,3 +77,5 @@ https://www.facebook.com/VietnamAIGC/photos/a.814060272283529/868543886835167/?t
 Team lead: KJ
 - TesterPRO.org/deepdata
 - TesterPRO.org/admincv
+
+Asta website: https://asta.red:8078
