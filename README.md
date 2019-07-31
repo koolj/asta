@@ -72,7 +72,7 @@ Any comments are appreciated.
 
 ## About
 The team:
-https://www.facebook.com/VietnamAIGC/photos/a.814060272283529/868543886835167/?type=1&theater
+https://www.facebook.com/KoolJ.InDaHouse/posts/10156237869665079
 
 Team lead: KJ
 - TesterPRO.org/deepdata
