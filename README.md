@@ -28,6 +28,9 @@ Add custom-jwt.js to node-modules
 Run run.sh, remove SSL if needed
 
 Test on local:3000/explorer
+### Install Spark & Akka engine for api, data modeling
+Install Idea IntelliJ
+Add libs, akka, spark
 
 ### View device sensor
 Copy folder sensor to asta folder, test on local:
