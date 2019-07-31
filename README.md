@@ -75,6 +75,5 @@ The team:
 https://www.facebook.com/VietnamAIGC/photos/a.814060272283529/868543886835167/?type=1&theater
 
 Team lead: KJ
-TesterPRO.org/deepdata
-
-TesterPRO.org/admincv
+- TesterPRO.org/deepdata
+- TesterPRO.org/admincv
