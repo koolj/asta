@@ -74,7 +74,7 @@ Better than other sulutions:
 Any comments are appreciated.
 
 ## About
-The team:
+Bookworm team:
 https://www.facebook.com/KoolJ.InDaHouse/posts/10156237869665079
 
 Team lead: KJ
